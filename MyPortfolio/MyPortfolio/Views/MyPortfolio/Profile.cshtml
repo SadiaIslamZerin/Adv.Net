@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+}
+<b>@Html.ActionLink("Home", "Home")</b>
+&emsp;
+<b>@Html.ActionLink("Profile", "Profile")</b>
+&emsp;
+<b>@Html.ActionLink("Education", "Education")</b>
+&emsp;
+<b>@Html.ActionLink("Projects", "Projects")</b>
+&emsp;
+<b>@Html.ActionLink("References", "References")</b>
+
+<h2>Profile</h2>
+<br>
+<br>
+Name : @Model.name
+<br>
+Date of Birth : @Model.dob
+<br>
+Nationality : @Model.nati
+<br>
+Blood Group : @Model.bloodg
+<br>
+Address : @Model.address
+<br>
+Contact No : @Model.contno
+<br>
+Hobby : @Model.hobby
+

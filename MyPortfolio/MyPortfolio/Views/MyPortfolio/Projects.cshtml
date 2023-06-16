@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+<b>@Html.ActionLink("Home", "Home")</b>
+&emsp;
+<b>@Html.ActionLink("Profile", "Profile")</b>
+&emsp;
+<b>@Html.ActionLink("Education", "Education")</b>
+&emsp;
+<b>@Html.ActionLink("Projects", "Projects")</b>
+&emsp;
+<b>@Html.ActionLink("References", "References")</b>
+
+<h2>Projects</h2>
+<br>
+<br>
+<h2>Projects</h2>
+@{ int i = 1; }
+<table class="table table-bordered">
+    <tr>
+        <th>SL NO</th>
+        <th>Course</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var values in Model)
+    {
+        <tr>
+            <td>@i</td>
+            <td>@values.course</td>
+            <td>@values.description</td>
+            @{ i++; }
+        </tr>
+    }
+</table>
+
